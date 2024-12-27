@@ -1,73 +1,80 @@
-/**What is an Algorithm?
-An algorithm is a step-by-step procedure or formula for solving a problem
- or performing a task. In JavaScript,  */
+/**
+ * What is an Algorithm?
+ * An algorithm is a step-by-step procedure or formula for solving a problem 
+ * or performing a task. In JavaScript, algorithms are implemented as code.
+ */
 
- /**A data structure is a way of organizing, managing, and storing data to
-  *  enable efficient access and modification.  */
-  
- // In the lesson we will learn the basics of javascript and build out a pyramid 
- // generator as we following along with freecodecamp lessons.
+/**
+ * What is a Data Structure?
+ * A data structure is a way of organizing, managing, and storing data to 
+ * enable efficient access and modification.
+ */
 
-//  The first lesson to build a pyramid generator is to learn about variables.
-// this is often done using let keyword,variable nameing follows a specific rule,
-/** names can include letters, numbers, dollar signs, and underscores, but cannot 
- * contain spaces and must not begin with a number.
+// In this lesson, we will learn the basics of JavaScript and build a pyramid 
+// generator as we follow along with freeCodeCamp lessons.
 
-Use the let keyword to declare a variable called character.
-
-Note: It is common practice to end statements in JavaScript with a semicolon. ; */
-
+/** Lesson 1: Variables
+ * The first lesson to build a pyramid generator is to learn about variables.
+ * Variables are often declared using the `let` keyword. Variable naming follows 
+ * specific rules:
+ * - Names can include letters, numbers, dollar signs ($), and underscores (_).
+ * - Names cannot contain spaces or begin with a number.
+ *
+ * Use the `let` keyword to declare a variable called `character`.
+ * Note: It is common practice to end statements in JavaScript with a semicolon (`;`).
+ */
 let character;
 
-// lesson 2.
+// Lesson 2: Assigning Values
+// This lesson teaches how to assign a value to a variable.
+// Using the assignment operator (`=`), you can assign a value. This is called initialization.
+// Example: I added the string value "hello" to the `character` variable.
+character = "hello";
 
-// this lesson teaches how to assign a value to a variable.
-// by using the assignment operator you can assign a value,this is call
-// intialization 
-// i added the string value of "hello" to the character variable.
-let character = "hello";
+// Lesson 3: String Values
+// This lesson explains string values.
+// Strings in JavaScript can be written using either single (`'`) or double (`"`) quotes.
+// Example: I replaced the double quotes in the `character` variable value with single quotes.
+character = 'hello';
 
-// lesson 3.
-
-//  this lesson teaches you about the string value
-// this specific lesson states that there is 2 ways to write string its by using sigle or double quotes.
-// i replaced the double qoutes for the value of the character variable from double to single.
-let character = 'hello'
-
-// lesson 4.
-
-// This lesson teaches you about the console.log, this is method with the function to output 
-// the value of a variable.
-// i added the console.log method to print the value of character variable to the console log.
-let character = 'Hello';
+// Lesson 4: Console Log
+// This lesson introduces `console.log`, a method used to output the value of a variable.
+// Example: I used the `console.log` method to print the value of the `character` variable.
+character = 'Hello';
 console.log(character);
 
-// lesson 5.
-
-// this lesson teaces you how to reasign/replace the value of a variable.
-// I change the value of the variable from hello to world.
-let character = 'Hello';
-character= "World"
-console.log(character);
-
-// lesson 6.
-
-// This lesson teaches about you how to name varuables using camel case, 
-// this means that each word in your name should start with a capital letter. 
-// I added a new variable called secondCharacter; without intializing it.
-// this is called uninitialized.
-let character = 'Hello';
-character= "World"
-console.log(character);
-let secondCharacter;
-
-// lesson 7.
-
-// this lesson teaches you how to assign a value to a unitialized variable.
-// i added a value to a unitializled variable.
-let character = 'Hello';
-console.log(character);
+// Lesson 5: Reassigning Variables
+// This lesson shows how to reassign or replace the value of a variable.
+// Example: I changed the value of `character` from "Hello" to "World".
+character = 'Hello';
 character = "World";
+console.log(character);
+
+// Lesson 6: Camel Case Naming
+// This lesson discusses naming variables using camelCase.
+// In camelCase, each word in a variable name starts with a capital letter, except the first word.
+// Example: I added a new variable called `secondCharacter` without initializing it.
 let secondCharacter;
-secondCharacter = "Test"
+
+// Lesson 7: Initializing Uninitialized Variables
+// This lesson teaches how to assign a value to an uninitialized variable.
+// Example: I added a value to the `secondCharacter` variable.
+secondCharacter = "Test";
 console.log(secondCharacter);
+
+// Lesson 8: Assigning Variables
+// This lesson explains how to assign the value of one variable to another.
+// Example: I assigned the value of `character` to `secondCharacter`.
+secondCharacter = character;
+console.log(secondCharacter);
+
+// Lesson 9: Numbers as Variable Values
+// This lesson highlights that quotation marks are not needed around numbers 
+// when initializing them as variable values.
+// Example: I created a new variable called `count` and assigned it the value 8.
+let count = 8;
+
+// Lesson 10: Number Data Type
+// This lesson explains the number data type, which can perform math operations like `+`, `-`, and `*`.
+// Example: I added a `console.log` statement to the `count` variable and used the `+` operator to add 1.
+console.log(count + 1);
