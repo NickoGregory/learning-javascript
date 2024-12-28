@@ -78,3 +78,60 @@ let count = 8;
 // This lesson explains the number data type, which can perform math operations like `+`, `-`, and `*`.
 // Example: I added a `console.log` statement to the `count` variable and used the `+` operator to add 1.
 console.log(count + 1);
+
+// Lesson 11: Array
+// This lesson teaches about the array data structure,this allows us to store more complex data
+// unlike string and number primitive data type.array is represented/denoted by []
+// Example: I added a new variable called 'row' and assign it an empty array.
+let character = 'Hello';
+let count = 8;
+let rows = [];
+
+// Lesson 12: Understanding Arrays and Adding Values  
+// Topic: Initializing arrays and adding elements  
+// This lesson teaches how to initialize an array and add elements to it.  
+// Example: Creating a rows variable with an array value.  
+let rows = ["Naomi", "Quincy", "CamperChan"];
+
+// Lesson 13: Accessing Array Elements by Index  
+// Topic: Retrieving array elements using their positions  
+// This lesson demonstrates how to retrieve values from an array using their index positions.  
+// Example: Logging a value from the array to the console.  
+console.log(rows[0]); // Output: Naomi  
+
+// Lesson 14: Modifying Array Elements  
+// Topic: Updating array values  
+// This lesson explains how to update the value of an array element at a specific position.  
+// Example: Changing the value at the 3rd position (index 2) of the array.  
+rows[2] = 10;  
+console.log(rows); // Output: ["Naomi", "Quincy", 10]  
+
+// Lesson 15: Using Array Length to Access Elements  
+// Topic: Accessing the last element of an array  
+// This lesson shows how to use the .length property to manipulate or access the last element of an array.  
+// Example: Modifying the last element of the array using .length - 1.  
+rows[rows.length - 1] = 10;  
+console.log(rows); // Output: ["Naomi", "Quincy", 10]  
+
+// Lesson 16: Adding Elements with .push()  
+// Topic: Appending elements to an array  
+// This lesson teaches how to add new elements to the end of an array using the .push() method.  
+// Example: Adding a new string to the array.  
+rows.push("freeCodeCamp");  
+console.log(rows); // Output: ["Naomi", "Quincy", 10, "freeCodeCamp"]  
+
+// Lesson 17: Removing Elements with .pop()  
+// Topic: Deleting the last element from an array  
+// This lesson explains how to remove the last element from an array and store it in a variable using .pop().  
+// Example: Removing the last element and logging the result.  
+let popped = rows.pop();  
+console.log(popped); // Output: freeCodeCamp  
+console.log(rows);   // Output: ["Naomi", "Quincy", 10]  
+
+// Lesson 18: Return Value of .push()  
+// Topic: Using the return value of .push()  
+// This lesson explores how the .push() method returns the new length of the array after adding an element.  
+// Example: Assigning rows.push("freeCodeCamp") to a variable and logging the result.  
+let pushed = rows.push("freeCodeCamp");  
+console.log(pushed); // Output: 4 (new length of the array)  
+console.log(rows);   // Output: ["Naomi", "Quincy", 10, "freeCodeCamp"]  
