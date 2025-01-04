@@ -136,66 +136,124 @@ let pushed = rows.push("freeCodeCamp");
 console.log(pushed); // Output: 4 (new length of the array)  
 console.log(rows);   // Output: ["Naomi", "Quincy", 10, "freeCodeCamp"]  
 
-// Lesson 19:
-// this lesson teaches us how construct/declare a loop function to make multiple 
-// rows to generate the pyramid.
-// Example: I constructed a for loop with 3 values.
-for ("iterator"; "condition"; "iteration") {
+// Lesson 19: Declaring a Loop Function
+// This lesson teaches how to construct a loop to generate multiple rows for a pyramid.
+// Example: A for loop with three components is constructed.
+for (let iterator; condition; iteration) {
+    // Loop logic here
 }
 
-// Lesson 20:
-// this lesson teaches us what a iterator is,the iterator tool
-//  controls how the loop moves through its steps,
-// Example: I replace the string iterator and declare a "i" variable.
-// this keeps track of the loop as it runs. 
-for (let i = 0; "condition"; "iteration") {
-
+// Lesson 20: Understanding the Iterator
+// This lesson explains what an iterator is. It controls the steps of the loop.
+// Example: Declare the variable `i` to track the loop's progress.
+for (let i = 0; condition; iteration) {
+    // Loop logic here
 }
 
-
-// Lesson 21:
-//  This teaches us how to condition our loop by determine how many times the loop runs.
-// Example: I replaced the condition value to be i < count; which is checking if i 
-// variable is lesser than count.
-for (let i = 0; i < count; "iteration") {
-
+// Lesson 21: Setting Loop Conditions
+// This lesson teaches how to determine how many times the loop runs.
+// Example: Replace `condition` with `i < count` to check if `i` is less than `count`.
+for (let i = 0; i < count; iteration) {
+    // Loop logic here
 }
 
-// Lesson 22: 
-// this lesson teaches us how to use the iteration,this tells the iterater what to do after each 
-// run.
-// Example: I use that syntax to replace your "iteration" string with a reassignment statement 
-// that increases i by one.
-for (let i = 0; i < count; i = i + 1) {
-
+// Lesson 22: Using Iteration
+// This lesson covers how to update the iterator after each loop.
+// Example: Increment `i` using `i++`.
+for (let i = 0; i < count; i++) {
+    // Loop logic here
 }
 
-// Lesson 23:
-// this console teaches what happens when i make the console.log to the print "i" varialbe.
-// Example: I just added a console.log to print the results of "i" variable.
-for (let i = 0; i < count; i = i + 1) {
-    console.log(i)
-    }
+// Lesson 23: Printing Loop Values
+// This lesson demonstrates how to log the iterator value during each loop.
+// Example: Print the value of `i`.
+for (let i = 0; i < count; i++) {
+    console.log(i);
+}
 
-    // Lesson 24: 
-    // This lesson teaches a differnt type of loop which manipulate a empty 
-    // variable string,this allows you to track through your rows array and assign each
-    //  value to a new row variable.
-    // Example: I created a new loop statement that allows me to track through my array to
-    // then store all the value in a new array.
-    for (const row of rows) {
+// Lesson 24: Iterating Through Arrays
+// This lesson introduces the `for...of` loop to iterate through arrays.
+// Example: Loop through an array and assign each value to `row`.
+for (const row of rows) {
+    // Access each row here
+}
 
-    }
+// Lesson 25: Concatenation
+// This lesson teaches how to combine string values.
+// Example: Use the `+` operator to concatenate `row` to `result`.
+for (const row of rows) {
+    result += row;
+}
 
-    // Lesson 25:
-    //  This lesson teaches us how to connect one variable value to the next variable,
-    // this is called cancatination.
-    // I use the addition operator to concatenate the row value
-    //  to the result value.
-    for (const row of rows) {
-        result = result + row;
-        }
+// Lesson 26: Adding Newlines
+// This lesson shows how to use `\n` to add a newline after each string.
+// Example: Append `\n` to the concatenated string.
+for (const row of rows) {
+    result += row + "\n";
+}
 
-    // Lesson 26:
-    // 
-    // 
+// Lesson 27: Using the `.repeat()` Method
+// This lesson introduces the `.repeat()` method to repeat strings.
+// Example: Add repeated characters to the array `rows`.
+for (let i = 0; i < count; i++) {
+    rows.push(character.repeat(i));
+}
+
+// Lesson 28: Creating and Calling Functions
+// This lesson explains how to define and invoke a function.
+// Example: Define a function and call it.
+function padRow() {
+    // Function logic here
+}
+padRow();
+const call = padRow();
+
+// Lesson 29: Returning Values from Functions
+// This lesson teaches how to return a value from a function.
+// Example: Add a `return` statement to return "Hello!".
+function padRow() {
+    return "Hello!";
+}
+padRow();
+const call = padRow();
+
+// Lesson 30: Using Parameters in Functions
+// This lesson explains how to make functions reusable by using parameters.
+// Example: Add a `name` parameter.
+function padRow(name) {
+    return "Hello, " + name;
+}
+
+// Lesson 31: Passing Arguments
+// This lesson teaches how to pass arguments to function parameters.
+// Example: Pass "Nicko" as an argument.
+const call = padRow("Nicko");
+
+// Lesson 32: Function Review
+// Example: Declare a sum variable by calling the `addTwoNumbers` function.
+const sum = addTwoNumbers(5, 10);
+function addTwoNumbers(a, b) {
+    return a + b;
+}
+console.log(sum);
+
+// Lesson 33: Concatenating Variables
+// This lesson shows how to concatenate two variables.
+// Example: Combine `character` and `name`.
+function padRow(name) {
+    return character + name;
+}
+
+// Lesson 34: Using the "if" Statement
+// This lesson introduces conditional logic with the `if` statement.
+// Example: Check a condition and execute logic.
+if (condition) {
+    // Logic here
+}
+
+// Lesson 35: Using While Loops
+// This lesson explains how a `while` loop works.
+// Example: Run a loop until the condition is false.
+while (continueLoop) {
+    // Loop logic here
+}
